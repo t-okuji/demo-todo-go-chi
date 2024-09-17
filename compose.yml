@@ -2,16 +2,19 @@ services:
   go:
     container_name: go-chi
     volumes:
-      - ./:/app/
+      - ./app:/app/
     tty: true
     build:
       context: .
       dockerfile: Dockerfile
+      target: dev
     ports:
       - 8080:3000
     command: sh -c 'go mod tidy && air'
     depends_on:
       - postgres
+    env_file:
+      - .env
   postgres:
     image: postgres:16-alpine
     container_name: postgres
