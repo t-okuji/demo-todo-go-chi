@@ -1,0 +1,6 @@
+.tmp
+docs
+.env
+.postgres
+.pgadmin
+*.pem
