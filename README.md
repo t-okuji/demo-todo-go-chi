@@ -3,6 +3,8 @@
 This is Go prject for demo.
 Implementing todo crud.
 
+Frontend is [here (React)](https://github.com/t-okuji/demo-todo-react).
+
 ## Getting started
 
 - dev
